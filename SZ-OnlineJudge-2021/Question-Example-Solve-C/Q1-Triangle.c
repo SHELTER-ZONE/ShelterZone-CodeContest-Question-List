@@ -12,10 +12,10 @@
 
 int main (void) {
 	char triangle[] = "    ^     \n\
-          				  / \    \n\
-			 			 /   \   \n\
-					    /     \  \n\
-					   /_______\ \n";
+			      / \    \n\
+			     /   \   \n\
+			    /     \  \n\
+			   /_______\ \n";
 
 	unsigned int height = 0,length = sizeof(triangle),i;
 	for(i=0;i<length;i++) {
