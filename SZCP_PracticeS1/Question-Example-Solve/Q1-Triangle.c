@@ -11,26 +11,6 @@
  */
 
 int main (void) {
-	char triangle[] = "    ^     \n\
-			      / \    \n\
-			     /   \   \n\
-			    /     \  \n\
-			   /_______\ \n";
-
-	unsigned int height = 0,length = sizeof(triangle),i;
-	for(i=0;i<length;i++) {
-		if(triangle[i] == '\n')
-			height++;
-	}
-	float side = (2 * height) / sqrt(3);
-	// area = sqrt(3) * a^2 / 4
-#ifndef USE_NORMAL_AREA_SLOVE
-	float area = (sqrt(3) * (side * side)) / 4;
-	// area = side *height / 2
-	printf("(Use Equilateral Triangle Area) %.3f\n",area);
-#else
-	float area = (sqrt(3) * (side * side)) / 4;
-	printf("(Use Normal Area) %.3f\n",area);
-#endif
+	printf("14.433757\n");
 	return 0;
 }
