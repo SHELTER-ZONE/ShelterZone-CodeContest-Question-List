@@ -12,7 +12,7 @@
 ## 輸入
 
 第一行輸入![](https://latex.codecogs.com/svg.latex?a,b)，
-且![](https://latex.codecogs.com/svg.latex?2^{-32}%20%3C%20a,b%20%3C%202^{32})。<br>
+且![](https://latex.codecogs.com/svg.latex?2^{-31}%20%3C%20a,b%20%3C%202^{31})。<br>
 
 ## 輸出
 
