@@ -1,34 +1,40 @@
-# 正三角形
+# 直角三角形
 
 > ShelterZone Code Contest S1 PracticeContest Q1<br>
 > 題目作者: iblackcat#4119
 
 ## 題目
-下方會給你一個由字串組成的正三角形，請你將它放入程式，並且求出這個正三角形的面積。  
+下方為一個直角三角形，其高![](https://latex.codecogs.com/svg.latex?a)為邊![](https://latex.codecogs.com/svg.latex?b)的![](https://latex.codecogs.com/svg.latex?log_{2}b)，如下圖：
 
-```
-triangle = "    ^     \n\
-               / \    \n\
-              /   \   \n\
-             /     \  \n\
-            /_______\ \n";
-```
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Rtriangle.svg/1200px-Rtriangle.svg.png">
+</center>
+<br>
+
+請輸入邊![](https://latex.codecogs.com/svg.latex?b)的大小，並且輸出這個直角三角形的面積。
 
 ---
 
 ## 輸入
-無
+每一行輸入直角三角形的邊![](https://latex.codecogs.com/svg.latex?b%20(0<b<1000))，若輸入![](https://latex.codecogs.com/svg.latex?-1)則結束程式。
+
+<br>
 
 ## 輸出
-一浮點數![](https://latex.codecogs.com/svg.latex?f)，為正三角形的面積。
+針對每一行輸出此直角三角形的面積。
 
 ---
 
 ## 範例輸入
 ```
-無
+5
+10
+15
+-1
 ```
 ## 範例輸出
 ```
-14.433757
+5.80482
+16.6096
+29.3017
 ```
