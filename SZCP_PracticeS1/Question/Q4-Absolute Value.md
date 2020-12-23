@@ -16,20 +16,20 @@
 
 ## 輸出
 
-輸出![](https://latex.codecogs.com/svg.latex?x)。
+輸出![](https://latex.codecogs.com/svg.latex?|x|)有多少種可能。
 
 ---
 
 ## 範例輸入
 
 ```
--3 13
+3 13
 ```
 
 ## 範例輸出
 
 ```
-25
+9
 ```
 
 
