@@ -6,7 +6,7 @@
  * GCC V5.1.0
  * Shelter Zone Newbie Online Judge Q2
  * Author    : XO
- * Date      : 109.08.22
+ * Date      : 1109.12.30
  */
 
 void ToLower(char *src,const int len) {
@@ -22,30 +22,22 @@ char solve(char *src) {
     ToLower(src,count);
     if(count == 8) {
         // count number
-        int sum = 1, numcount = 0, i;
+        int sum = 1, numcount = 0, i, j;
         for(i=0;i<count;i++) {
             if(src[i] >= '0' && src[i] <= '9') {
                 sum *= (src[i] - '0');
                 numcount++;
             }
         }
-        if(((sum % 3) != 0 || (sum % 7) != 0) && numcount != 2)
+        if (((sum % 3) != 0 || (sum % 7) != 0) && numcount != 2)
             return 0;
-        // count letter
-        int letcount = 0,same_letter = 0,j;
+
         for(i=0;i<count;i++) {
-            if(src[i] >= 'a' && src[i] <= 'z') {
-                letcount++;
-                for(j=i+1;j<count;j++) {
-                    if(src[i] == src[j]) {
-                        same_letter = 1;
-                        break;
-                    }
-                }
+            for(j=0;j<count;j++) {
+                if(src[i] == src[j] && i != j)
+                    return 0;
             }
         }
-        if(letcount == 6 && same_letter == 1)
-            return 0;
         return 1;
     }
     return 0;
